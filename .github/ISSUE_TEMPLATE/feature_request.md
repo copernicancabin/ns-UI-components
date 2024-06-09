@@ -22,7 +22,7 @@ Based on project's roadmap, this component will need to have the following speci
 
 ### Tasks
 - Research
-  - [ ] Study the document from its basics on [bulma's documentation](https://bulma.io/documentation/elements)
+  - [ ] Study the document from its basics
   - [ ] Document possible properties and behaviours
 - Development
   - [ ] Create its folder and a `index.tsx` file where it will coded the component itself
@@ -42,4 +42,4 @@ Based on project's roadmap, this component will need to have the following speci
 ---
 
 ### Technical notes
-TB
+TBD
