@@ -3,12 +3,12 @@ name: Feature request
 about: Component creation
 title: Create component XXX
 labels: feature
-assignees: NicolasOmar
+assignees: Himanshu Savita
 
 ---
 
 ### Objective
-Create bulma's component `XXX` from scratch
+Create ns-ui's component `XXX` from scratch
 
 ---
 
