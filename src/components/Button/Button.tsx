@@ -1,5 +1,11 @@
 import React from "react";
 
-const Button: React.FC = () => <button>test</button>;
+interface ButtonProps {
+  text: string;
+}
+
+const Button: React.FC<ButtonProps> = ({ text = "" }) => (
+  <button>{text}</button>
+);
 
 export default Button;
