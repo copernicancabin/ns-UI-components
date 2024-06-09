@@ -1,0 +1,27 @@
+{
+  "name": "ns-ui-components",
+  "version": "0.0.1",
+  "description": "A typescript-react-based library for UI components",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naptune-sailor/ns-UI-components.git"
+  },
+  "keywords": [
+    "typescript",
+    "react",
+    "component-library"
+  ],
+  "author": "Himanshu Savita",
+  "license": "Naptunesailor",
+  "homepage": "https://github.com/naptune-sailor/ns-UI-components#readme",
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "node-sass": "^9.0.0",
+    "react": "^18.3.1",
+    "typescript": "^5.4.5"
+  }
+}
