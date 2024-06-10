@@ -1,9 +1,11 @@
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
-import dts from "rollup-plugin-dts";
-
-import packageJson from "./package.json" assert { type: "json" };
+// PLUGINS
+const dts = require("rollup-plugin-dts");
+import postCss from "rollup-plugin-postcss";
+// PACKAGE.JSON
+const packageJson = require("./package.json");
 
 export default [
   {
@@ -23,13 +25,17 @@ export default [
     plugins: [
       resolve(),
       commonjs(),
-      typescript({ tsconfig: "./tsconfig.json" }),
+      typescript({
+        tsconfig: "./tsconfig.json",
+        exclude: ["**/*.stories.tsx"],
+      }),
+      postCss(),
     ],
   },
   {
     input: "dist/esm/types/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
-    plugins: [dts()],
-    external: [/\/*.scss/],
+    plugins: [dts.default()],
+    external: [/\.css$/],
   },
 ];
