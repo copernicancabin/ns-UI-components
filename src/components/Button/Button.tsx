@@ -5,7 +5,7 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({ text = "" }) => (
-  <button>{text}</button>
+  <button className="button">{text}</button>
 );
 
 export default Button;
