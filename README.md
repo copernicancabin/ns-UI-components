@@ -6,7 +6,7 @@ UI components to create and use in all React UI projects
 
 Before cloning this repo, I recommend installing the following software:
 
-- [Node](https://nodejs.org/en/download/) >=12.16.1 to install packages
+- [Node](https://nodejs.org/en/download/) >=18 to install packages
 
 ## Setup
 
@@ -20,7 +20,7 @@ npm install
 
 ## How to run it
 
-To run it's storybook (until `v0.1.0`, it will have an example button only)
+To run it's storybook (until `v1.1.0`, it will have an example button only)
 
 ```sh
 npm start
