@@ -1,6 +1,6 @@
 {
   "name": "ns-ui-components",
-  "version": "0.0.0-development",
+  "version": "0.0.0",
   "description": "A typescript-react-based library for UI components",
   "scripts": {
     "start": "start-storybook -p 6006",
