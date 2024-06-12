@@ -2,6 +2,12 @@
   "name": "ns-ui-components",
   "version": "1.1.0",
   "description": "A typescript-react-based library for UI components",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
   "scripts": {
     "start": "start-storybook -p 6006",
     "test": "jest --watchAll=false --verbose",
@@ -84,11 +90,5 @@
       "prettier --write",
       "eslint --fix"
   ]
-  },
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "files": [
-    "dist"
-  ],
-  "types": "dist/index.d.ts"
+  }
 }
