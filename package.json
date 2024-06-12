@@ -21,6 +21,12 @@
   "keywords": [
     "typescript",
     "react",
+    "rollup",
+    "semantic-release",
+    "jest",
+    "prettier",
+    "eslint",
+    "husky",
     "component-library"
   ],
   "author": "Himanshu Savita",
