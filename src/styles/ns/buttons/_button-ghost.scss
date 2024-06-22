@@ -1,0 +1,36 @@
+/*------------------------------------
+  Ghost Buttons Styles
+------------------------------------*/
+
+// Ghost Buttons
+@mixin button-ghost($hs-color, $hs-hover-background) {
+  color: ($hs-color);
+  background-color: $btn-ghost-bg-color;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: ($hs-color);
+    background-color: rgba($hs-hover-background, .1);
+  }
+}
+
+@each $color, $value in $theme-colors {
+	/* #{$color} ghost button */
+  .btn-ghost-#{$color} {
+    @if $color == "secondary" {
+      @include button-ghost($value, rgba($primary, .1));
+    } @else {
+      @include button-ghost($value, $value);
+    }
+  }
+}
+
+.btn-ghost-secondary {
+  &:hover,
+  &:focus,
+  &:active {
+    color: ($primary);
+  }
+}
