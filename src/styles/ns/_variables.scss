@@ -1279,7 +1279,7 @@ $range-slider-indicator-height:                             5rem !default;
 $range-slider-indicator-grid-height:                        8rem !default;
 $range-slider-grid-height:                                  4.5rem !default;
 $range-slider-grid-inner-height:                            2.5rem !default;
-$rang-slider-inner-grid-pol-height:                         $range-slider-grid-height / 5 !default;
+$rang-slider-inner-grid-pol-height:                         calc($range-slider-grid-height / 5) !default;
 
 // Borders
 $range-slider-inner-elements-border-radius:                 $border-radius-pill !default;
@@ -1287,10 +1287,10 @@ $rang-slider-border-radius:                                 $border-radius-round
 $rang-slider-single-element-border-radius:                  $border-radius !default;
 
 // Position Spaces
-$rang-slider-indicator-line-top-offset:                     ($range-slider-indicator-grid-height - $range-slider-inner-elements-height) / 2 !default;
+$rang-slider-indicator-line-top-offset:                     calc(($range-slider-indicator-grid-height - $range-slider-inner-elements-height) / 2) !default;
 $rang-slider-indicator-bar-top-offset:                      $rang-slider-indicator-line-top-offset !default;
 $rang-slider-indicator-bar-edge-top-offset:                 $rang-slider-indicator-line-top-offset !default;
-$rang-slider-indicator-slider-top-offset:                   ($range-slider-stats-pointer-height - $range-slider-inner-elements-height) * 2 !default;
+$rang-slider-indicator-slider-top-offset:                   calc(($range-slider-stats-pointer-height - $range-slider-inner-elements-height) * 2) !default;
 
 // Paddings
 $rang-slider-single-element-padding-y:                      .5rem !default;
@@ -1375,10 +1375,10 @@ $step-icon-margin-y:                                        1rem !default;
 $step-icon-margin-x:                                        1rem !default;
 $step-avatar-margin-x:                                      $step-icon-margin-x !default;
 $step-timeline-content-margin-x:                            1.5rem !default;
-$step-timeline-icon-margin-x:                               $step-icon-width / 2 !default;
-$step-timeline-icon-xs-margin-x:                            $step-icon-xs-width / 2 !default;
-$step-timeline-icon-sm-margin-x:                            $step-icon-sm-width / 2 !default;
-$step-timeline-icon-lg-margin-x:                            $step-icon-lg-width / 2 !default;
+$step-timeline-icon-margin-x:                               calc($step-icon-width / 2) !default;
+$step-timeline-icon-xs-margin-x:                            calc($step-icon-xs-width / 2) !default;
+$step-timeline-icon-sm-margin-x:                            calc($step-icon-sm-width / 2) !default;
+$step-timeline-icon-lg-margin-x:                            calc($step-icon-lg-width / 2) !default;
 
 
 
