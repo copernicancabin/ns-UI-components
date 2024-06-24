@@ -6,7 +6,6 @@ import cssnano from 'cssnano'
 // PLUGINS
 const dts = require('rollup-plugin-dts')
 import postCss from 'rollup-plugin-postcss'
-import terser from '@rollup/plugin-terser'
 // PACKAGE.JSON
 const packageJson = require('./package.json')
 
@@ -34,11 +33,11 @@ export default [
       }),
       postCss({
         plugins: [autoprefixer, cssnano()],
-        modules: {
-          namedExport: true,
-          //minify classnames
-          generateScopedName: '[hash:base64:8]'
-        },
+        // modules: {
+        //   namedExport: true,
+        //   //minify classnames
+        //   generateScopedName: '[hash:base64:8]'
+        // },
         //uncomment the following 2 lines if you want to extract styles into a separated file
         /*extract: 'styles.css',
         inject: false,*/
@@ -46,8 +45,7 @@ export default [
         sourceMap: true,
         extensions: ['.scss', '.css'],
         use: ['sass']
-      }),
-      terser()
+      })
     ]
   },
   {
