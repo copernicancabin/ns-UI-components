@@ -1,0 +1,42 @@
+/*------------------------------------
+  Custom Button Toggle
+------------------------------------*/
+
+// Custom Toggle
+@mixin button-custom-toggle($hs-hover-background-color, $hs-hover-border-color, $hs-active-background-color, $hs-active-border-color) {
+  color: $btn-custom-color;
+  border-color: $btn-custom-border-color;
+
+  &:hover {
+    color: ($hs-hover-background-color);
+    background-color: transparent;
+    border-color: ($hs-hover-border-color);
+  }
+
+  &:not(:disabled):not(.disabled),
+  &:not(:disabled):not(.disabled) {
+
+    &:active,
+    &.active {
+      color: color-yiq($hs-active-background-color);
+      background-color: ($hs-active-background-color);
+      border-color: ($hs-active-border-color);
+    }
+  }
+}
+
+@each $color, $value in $theme-colors {
+  /* #{$color} custom toggle button */
+  .btn-custom-toggle-#{$color} {
+    @if $color == "light" {
+      @include button-custom-toggle($white, $value, $value, $value);
+    } @else {
+      @include button-custom-toggle($value, $value, $value, $value);
+    }
+  }
+}
+
+.btn-custom-toggle-light {
+  color: $white-color-70;
+  border-color: $white-color-70;
+}

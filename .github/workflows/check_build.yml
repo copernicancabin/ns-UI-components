@@ -14,7 +14,7 @@ jobs:
       - name: 2/6 | Setup Node environment
         uses: actions/setup-node@v3
         with:
-          node-version: 18.x
+          node-version: 20.x
       - name: 3/6 | Install depedencies
         run: npm ci
       - name: 4/6 | Run unit tests suite script

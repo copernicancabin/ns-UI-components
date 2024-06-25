@@ -1,0 +1,21 @@
+// Bootstrap setup
+@import '~bootstrap/scss/bootstrap';
+
+// Front setup
+@import 'ns/variables';
+
+// Custom setup
+@import 'user-variables';
+
+// Bootstrap core
+
+/*----------------------------------------------------------------------
+  * Front - Responsive Website Template version v3.0
+  * Copyright 2018 Htmlstream
+  * Licensed under Bootstrap Themes (https://themes.getbootstrap.com/licenses/)
+------------------------------------------------------------------------*/
+
+@import 'ns/ns';
+
+// Custom core
+@import 'user';
