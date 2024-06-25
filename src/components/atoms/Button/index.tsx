@@ -1,5 +1,5 @@
 import React from 'react'
-import './Button.scss'
+import './index.scss'
 import { ButtonProps } from '../../../interfaces/atomProps'
 
 const Button: React.FC<ButtonProps> = ({ text = '' }) => (
