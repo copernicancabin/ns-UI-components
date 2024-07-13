@@ -7,10 +7,10 @@ import {
 
 export interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
   text?: string
-  color: basicColorType
+  color?: basicColorType
   isRounded?: boolean
   isLoading?: boolean
-  isDisabled: boolean
+  isDisabled?: boolean
   isOutlined?: boolean
   isSoft?: boolean
   isGhost?: boolean

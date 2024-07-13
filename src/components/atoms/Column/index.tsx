@@ -2,7 +2,7 @@ import React from 'react'
 // PROPS
 import { ColumnProps } from '../../../interfaces/atomProps'
 // PARSERS
-import { parseClasses } from '../../../functions/perser'
+import { parseClasses } from '../../../functions/parsers'
 
 const Column: React.FC<ColumnProps> = ({
   size = null,

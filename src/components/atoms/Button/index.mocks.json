@@ -1,0 +1,11 @@
+{
+  "dummyText": "Hello there",
+  "testClasses": {
+    "color": "secondary",
+    "isRounded": "btn-pill",
+    "isLoading": "is-loading",
+    "isOutlined": "outline",
+    "isSoft": "soft",
+    "isGhost": "ghost"
+  }
+}
