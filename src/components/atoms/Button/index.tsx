@@ -7,6 +7,7 @@ import { parseClasses } from '../../../functions/parsers'
 
 const Button: React.FC<ButtonProps> = ({
   text = false,
+  type = 'button',
   color = 'primary',
   isRounded = false,
   isLoading = false,
@@ -16,7 +17,7 @@ const Button: React.FC<ButtonProps> = ({
   isDisabled = false,
   isLink = false,
   size = null,
-  onClick = () => console.warn('Button clicked')
+  onClick = null
 }) => {
   if (isOutlined) color = 'outline-' + color
   else if (isSoft) color = 'soft-' + color
@@ -34,8 +35,8 @@ const Button: React.FC<ButtonProps> = ({
       data-testid='test-button'
       type='button'
       className={buttonClasses}
-      disabled={isDisabled}
-      onClick={onClick}
+      disabled={isDisabled ?? false}
+      onClick={onClick ?? undefined}
     >
       {text}
     </button>

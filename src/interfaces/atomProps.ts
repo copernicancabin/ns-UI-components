@@ -16,6 +16,7 @@ export interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
   isGhost?: boolean
   isLink?: boolean
   size?: sizeType
+  onClick?: () => void
 }
 
 export interface ColumnProps extends React.ComponentPropsWithRef<'section'> {

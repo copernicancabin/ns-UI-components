@@ -42,15 +42,6 @@ describe('Button', () => {
     expect(clickableConfig.onClick).toHaveBeenCalledTimes(1)
   })
 
-  test('Should check that the button has been clicked', () => {
-    const clickableConfig = { onClick: jest.fn() }
-    render(<Button {...clickableConfig} />)
-    const clickButton = screen.getByTestId(buttonTestId)
-    fireEvent.click(clickButton)
-    expect(clickableConfig.onClick).toHaveBeenCalled()
-    expect(clickableConfig.onClick).toHaveBeenCalledTimes(1)
-  })
-
   test('Should check that it has not been clicked because it is disabled', () => {
     const notClickeableBtn = {
       isDisabled: true,
