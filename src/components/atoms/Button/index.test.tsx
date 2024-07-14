@@ -22,6 +22,17 @@ describe('Button', () => {
     expect(testButton).toBeInTheDocument()
   })
 
+  test('Should render the Button with specifc CSS styles', () => {
+    Object.keys(mocks.testStyles).forEach(prop => {
+      const styleValue = (mocks.testClasses as any)[prop]
+      const styleObject = { [prop]: styleValue }
+      render(<Button {...styleObject} />)
+      const styleButton = screen.getByTestId(buttonTestId)
+      expect(styleButton.style[prop as any]).toContain(styleValue)
+      cleanup()
+    })
+  })
+
   test('Should render the Button with specifc classes', () => {
     Object.keys(mocks.testClasses).forEach(prop => {
       const classValue = (mocks.testClasses as any)[prop]
