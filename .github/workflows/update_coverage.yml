@@ -2,7 +2,7 @@ name: Collect tests coverage
 
 on:
   push:
-    branches: ['main']
+    branches: ['master', '*']
 
 jobs:
   upload:
