@@ -8,6 +8,7 @@ import { parseClasses } from '../../../functions/parsers'
 const Button: React.FC<ButtonProps> = ({
   text = false,
   type = 'button',
+  style = null,
   color = 'primary',
   isRounded = false,
   isLoading = false,
@@ -28,12 +29,14 @@ const Button: React.FC<ButtonProps> = ({
     `btn-${isLink ? 'link' : color}`,
     isRounded ? 'btn-pill' : null,
     isLoading ? 'is-loading' : null,
-    size ? `btn-${size}` : null
+    size ? `btn-${size}` : null,
+    'mr-2' //DEFAULT MARGIN-RYT 0.5rem !important;
   ])
   return (
     <button
       data-testid='test-button'
-      type='button'
+      type={type}
+      style={style ?? undefined}
       className={buttonClasses}
       disabled={isDisabled ?? false}
       onClick={onClick ?? undefined}

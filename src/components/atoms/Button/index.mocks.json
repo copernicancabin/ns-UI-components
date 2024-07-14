@@ -1,5 +1,9 @@
 {
   "dummyText": "Hello there",
+  "testStyles": {
+    "color": "red",
+    "backgroundColor": "blue"
+  },
   "testClasses": {
     "color": "secondary",
     "isRounded": "btn-pill",
