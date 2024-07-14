@@ -24,9 +24,9 @@ describe('Button', () => {
 
   test('Should render the Button with specifc CSS styles', () => {
     Object.keys(mocks.testStyles).forEach(prop => {
-      const styleValue = (mocks.testClasses as any)[prop]
+      const styleValue = (mocks.testStyles as any)[prop]
       const styleObject = { [prop]: styleValue }
-      render(<Button {...styleObject} />)
+      render(<Button style={styleObject} />)
       const styleButton = screen.getByTestId(buttonTestId)
       expect(styleButton.style[prop as any]).toContain(styleValue)
       cleanup()
