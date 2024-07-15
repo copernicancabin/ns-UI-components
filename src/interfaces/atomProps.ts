@@ -25,3 +25,16 @@ export interface ColumnProps extends React.ComponentPropsWithRef<'section'> {
   offset?: columnOffsetType
   isNarrow?: boolean
 }
+
+export interface ProgressBarProps
+  extends React.ComponentPropsWithoutRef<'div'> {
+  value: number
+  max: number
+  min: number
+  style?: React.CSSProperties
+  color: basicColorType
+  size?: sizeType
+  isStriped?: boolean
+  isAnimated?: boolean
+  isLabeled?: boolean
+}

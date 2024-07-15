@@ -48,4 +48,4 @@ export type basicColorType =
   | 'dark'
   | 'navy'
 
-export type sizeType = 'lg' | 'sm' | 'xs'
+export type sizeType = 'lg' | 'md' | 'sm' | 'xs'
